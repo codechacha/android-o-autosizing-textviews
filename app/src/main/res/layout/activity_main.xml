@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codechacha.autosizingtextviews.MainActivity">
+
+    <Button
+        android:id="@+id/btn_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default"
+        android:onClick="startActivity"
+        app:layout_constraintBottom_toTopOf="@id/btn_granualarity"/>
+    <Button
+        android:id="@+id/btn_granualarity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Granularity"
+        android:onClick="startActivity"
+        app:layout_constraintTop_toTopOf="@id/btn_default"
+        app:layout_constraintBottom_toTopOf="@id/btn_preset"/>
+
+    <Button
+        android:id="@+id/btn_preset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preset Sizes"
+        android:onClick="startActivity"
+        app:layout_constraintTop_toBottomOf="@id/btn_granualarity"/>
+
+    <Button
+        android:id="@+id/btn_java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setting in Java"
+        android:onClick="startActivity"
+        app:layout_constraintTop_toBottomOf="@id/btn_preset"/>
+
+</android.support.constraint.ConstraintLayout>
