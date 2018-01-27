@@ -32,8 +32,6 @@ public class JavaActivity extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 mTextView.setText(s);
                 TextViewCompat.setAutoSizeTextTypeWithDefaults(mTextView, TextViewCompat.AUTO_SIZE_TEXT_TYPE_UNIFORM);
-                TextViewCompat.setAutoSizeTextTypeUniformWithConfiguration();
-                TextViewCompat.setAutoSizeTextTypeUniformWithPresetSizes();
             }
 
             @Override
